@@ -1,0 +1,22 @@
+{
+  "name": "exploregokarna",
+  "version": "1.0.0",
+  "description": "Explore Gokarna - Beach Days, Better Planned",
+  "type": "module",
+  "scripts": {
+    "dev": "npx serve .",
+    "build": "echo 'Static site - no build required'",
+    "lint": "echo 'No linter configured'"
+  },
+  "keywords": [
+    "gokarna",
+    "travel",
+    "beach",
+    "tourism"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@vercel/analytics": "^1.1.1"
+  }
+}
