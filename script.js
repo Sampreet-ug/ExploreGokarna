@@ -1,5 +1,6 @@
 const revealTargets = document.querySelectorAll(
   ".intro-strip, .activity-card, .tier-card, .reason-card, .photo-card, .masonry-card, .contact-card, .teaser-panel, .process-step, .catalog-item"
+  + ", .about-section, .about-media, .about-copy, .about-stats div"
 );
 
 const observer = new IntersectionObserver(

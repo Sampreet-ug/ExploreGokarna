@@ -51,6 +51,7 @@ a {
 .contact-card h2,
 .process-step h3,
 .catalog-item h3,
+.about-copy h2,
 .teaser-copy h2 {
   font-family: "Space Grotesk", sans-serif;
 }
@@ -125,6 +126,15 @@ a {
   display: inline-flex;
   align-items: center;
   gap: 12px;
+  min-width: 0;
+}
+
+.brand-logo {
+  width: clamp(152px, 18vw, 218px);
+  height: auto;
+  max-height: 92px;
+  object-fit: contain;
+  filter: drop-shadow(0 14px 24px rgba(0, 0, 0, 0.28));
 }
 
 .brand-mark {
@@ -323,6 +333,7 @@ a {
 
 .section-heading h2,
 .intro-strip h2,
+.about-copy h2,
 .teaser-copy h2,
 .contact-card h2 {
   margin: 8px 0 0;
@@ -333,6 +344,7 @@ a {
 }
 
 .intro-strip p:last-child,
+.about-copy p,
 .section-heading p:last-child,
 .tier-copy,
 .reason-card p,
@@ -343,6 +355,66 @@ a {
 .catalog-item p {
   color: var(--muted);
   line-height: 1.72;
+}
+
+.about-section {
+  display: grid;
+  grid-template-columns: minmax(280px, 0.9fr) minmax(0, 1.1fr);
+  gap: 34px;
+  align-items: center;
+  background: var(--surface);
+}
+
+.about-media {
+  min-height: 460px;
+  overflow: hidden;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.about-media img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.about-copy {
+  max-width: 760px;
+}
+
+.about-copy h2 {
+  max-width: 16ch;
+}
+
+.about-stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 28px;
+}
+
+.about-stats div {
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface-soft);
+}
+
+.about-stats strong,
+.about-stats span {
+  display: block;
+}
+
+.about-stats strong {
+  color: var(--green-dark);
+  font-family: "Space Grotesk", sans-serif;
+  font-size: clamp(1.45rem, 3vw, 2.1rem);
+  line-height: 1;
+}
+
+.about-stats span {
+  margin-top: 8px;
+  color: var(--muted);
+  font-weight: 700;
 }
 
 .trust-grid,
@@ -562,6 +634,10 @@ a {
 .tier-card,
 .reason-card,
 .photo-card,
+.about-section,
+.about-media,
+.about-copy,
+.about-stats div,
 .masonry-card,
 .contact-card,
 .teaser-panel,
@@ -590,7 +666,9 @@ a {
   .teaser-panel,
   .trust-grid,
   .process-grid,
-  .catalog-grid {
+  .catalog-grid,
+  .about-section,
+  .about-stats {
     grid-template-columns: 1fr;
   }
 
@@ -604,6 +682,7 @@ a {
   }
 
   .photo-card.tall,
+  .about-media,
   .masonry-card,
   .masonry-card.wide {
     min-height: 300px;
@@ -651,6 +730,10 @@ a {
 
   .brand-text small {
     max-width: 24ch;
+  }
+
+  .brand-logo {
+    width: 150px;
   }
 
   .section {
