@@ -606,7 +606,45 @@ a {
 }
 
 .contact-layout {
-  grid-template-columns: 1.1fr 0.9fr;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: stretch;
+}
+
+.instagram-card {
+  background:
+    linear-gradient(var(--surface), var(--surface)) padding-box,
+    linear-gradient(135deg, var(--amber), var(--clay), var(--green)) border-box;
+  border-color: transparent;
+}
+
+.instagram-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  width: fit-content;
+  margin-top: 8px;
+  padding: 11px 14px;
+  border-radius: var(--radius);
+  color: #ffffff;
+  background: linear-gradient(135deg, var(--clay), var(--amber) 48%, var(--green));
+  font-weight: 700;
+  box-shadow: 0 12px 22px rgba(168, 77, 63, 0.18);
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.instagram-link svg {
+  width: 22px;
+  height: 22px;
+  flex: 0 0 auto;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+}
+
+.instagram-link:hover,
+.instagram-link:focus-visible {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 28px rgba(168, 77, 63, 0.24);
 }
 
 .site-footer {
