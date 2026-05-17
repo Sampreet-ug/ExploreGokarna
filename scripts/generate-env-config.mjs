@@ -8,7 +8,7 @@ const config = {
 
 await writeFile(
   "env-config.js",
-  `window.DISCOVER_GOKARNA_CONFIG = ${JSON.stringify(config)};\n`,
+  `window.DISCOVER_GOKARNA_CONFIG = ${JSON.stringify(config, null, 2)};\n`,
   "utf8"
 );
 

@@ -37,4 +37,3 @@ yarn-error.log*
 .env
 .env.local
 .env.*.local
-env-config.js
