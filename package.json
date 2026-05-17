@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "npx serve .",
-    "build": "node scripts/generate-env-config.mjs",
+    "build": "node scripts/build.mjs",
     "lint": "echo 'No linter configured'"
   },
   "keywords": [

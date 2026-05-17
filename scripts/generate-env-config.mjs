@@ -1,6 +1,11 @@
 import { writeFile } from "node:fs/promises";
 
 const contactPhone = String(process.env.CONTACT_PHONE || "").replace(/\D/g, "");
+const isVercelBuild = process.env.VERCEL === "1";
+
+if (isVercelBuild && !contactPhone) {
+  throw new Error("CONTACT_PHONE is not set for this Vercel deployment.");
+}
 
 const config = {
   contactPhone,
