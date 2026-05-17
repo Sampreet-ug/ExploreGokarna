@@ -5,7 +5,6 @@ const revealTargets = document.querySelectorAll(
 
 const appConfig = window.DISCOVER_GOKARNA_CONFIG || {};
 const contactPhone = String(appConfig.contactPhone || "").replace(/\D/g, "");
-const isHostedPage = window.location.protocol === "http:" || window.location.protocol === "https:";
 const whatsappMessages = {
   "trip-intake": `Hi Discover Gokarna, I want help planning a Gokarna trip.
 
@@ -70,14 +69,3 @@ revealTargets.forEach((target, index) => {
   target.style.transitionDelay = `${Math.min(index * 70, 280)}ms`;
   observer.observe(target);
 });
-
-if (isHostedPage) {
-  window.va = window.va || function () {
-    (window.vaq = window.vaq || []).push(arguments);
-  };
-
-  const insightsScript = document.createElement("script");
-  insightsScript.defer = true;
-  insightsScript.src = "/_vercel/insights/script.js";
-  document.head.appendChild(insightsScript);
-}
