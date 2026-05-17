@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "npx serve .",
-    "build": "echo 'Static site - no build required'",
+    "build": "node scripts/generate-env-config.mjs",
     "lint": "echo 'No linter configured'"
   },
   "keywords": [
