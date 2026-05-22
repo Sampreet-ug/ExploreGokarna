@@ -52,6 +52,9 @@ a {
 .process-step h3,
 .catalog-item h3,
 .about-copy h2,
+.blog-card h2,
+.blog-article h1,
+.blog-article h2,
 .teaser-copy h2 {
   font-family: "Space Grotesk", sans-serif;
 }
@@ -107,6 +110,12 @@ a {
 .contact-hero {
   background:
     linear-gradient(90deg, rgba(8, 31, 29, 0.88), rgba(8, 31, 29, 0.58)),
+    url("https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?auto=format&fit=crop&w=1800&q=82") center / cover;
+}
+
+.blog-hero {
+  background:
+    linear-gradient(90deg, rgba(8, 31, 29, 0.9), rgba(8, 31, 29, 0.55)),
     url("https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?auto=format&fit=crop&w=1800&q=82") center / cover;
 }
 
@@ -183,6 +192,7 @@ a {
 .activity-tag,
 .tier-name,
 .catalog-item span,
+.blog-meta,
 .package-meta {
   text-transform: uppercase;
   letter-spacing: 0.14em;
@@ -198,6 +208,7 @@ a {
 .activity-tag,
 .tier-name,
 .catalog-item span,
+.blog-meta,
 .package-meta {
   color: var(--green);
 }
@@ -285,6 +296,7 @@ a {
 .tier-card,
 .reason-card,
 .contact-card,
+.blog-card,
 .process-step,
 .catalog-item {
   background: var(--surface);
@@ -351,6 +363,8 @@ a {
 .activity-card p,
 .teaser-copy p:last-child,
 .contact-card p,
+.blog-card p,
+.blog-article p,
 .process-step p,
 .catalog-item p {
   color: var(--muted);
@@ -482,6 +496,7 @@ a {
 .activity-card,
 .reason-card,
 .contact-card,
+.blog-card,
 .process-step,
 .catalog-item {
   padding: 26px;
@@ -496,6 +511,161 @@ a {
   font-size: 1.35rem;
   line-height: 1.12;
   letter-spacing: 0;
+}
+
+.blog-index {
+  background: var(--surface-soft);
+}
+
+.blog-card-grid {
+  display: grid;
+  gap: 22px;
+}
+
+.blog-card {
+  display: grid;
+  grid-template-columns: minmax(260px, 0.85fr) minmax(0, 1.15fr);
+  gap: 26px;
+  align-items: center;
+}
+
+.blog-card img {
+  height: 100%;
+  min-height: 320px;
+  border-radius: var(--radius);
+  object-fit: cover;
+}
+
+.blog-card h2 {
+  margin: 8px 0 12px;
+  font-size: clamp(1.8rem, 3.2vw, 3rem);
+  line-height: 1.02;
+  letter-spacing: 0;
+}
+
+.blog-card h2 a:hover,
+.blog-card h2 a:focus-visible,
+.blog-links a:hover,
+.blog-links a:focus-visible,
+.article-backlinks a:hover,
+.article-backlinks a:focus-visible {
+  color: var(--green);
+}
+
+.blog-links,
+.article-backlinks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 18px;
+}
+
+.blog-links {
+  margin-top: 20px;
+}
+
+.blog-links a,
+.article-backlinks a {
+  color: var(--green-dark);
+  font-weight: 700;
+  border-bottom: 2px solid rgba(15, 110, 86, 0.22);
+}
+
+.blog-article {
+  width: min(100%, 880px);
+  margin: 0 auto;
+  padding: 58px 20px 76px;
+}
+
+.article-header {
+  margin-bottom: 30px;
+}
+
+.article-header h1 {
+  margin: 10px 0 16px;
+  font-size: clamp(2.4rem, 5vw, 4.5rem);
+  line-height: 0.98;
+  letter-spacing: 0;
+}
+
+.blog-article section {
+  margin-top: 36px;
+}
+
+.blog-article h2 {
+  margin: 0 0 14px;
+  color: var(--ink);
+  font-size: clamp(1.7rem, 3vw, 2.45rem);
+  line-height: 1.08;
+  letter-spacing: 0;
+}
+
+.blog-article a:not(.button) {
+  color: var(--green-dark);
+  font-weight: 700;
+}
+
+.article-toc {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 14px;
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface-soft);
+}
+
+.article-toc .section-label {
+  flex-basis: 100%;
+  margin: 0;
+}
+
+.article-toc a {
+  padding: 8px 10px;
+  border-radius: var(--radius);
+  background: #ffffff;
+}
+
+.article-faq details {
+  padding: 18px 0;
+  border-top: 1px solid var(--line);
+}
+
+.article-faq details:last-child {
+  border-bottom: 1px solid var(--line);
+}
+
+.article-faq summary {
+  cursor: pointer;
+  color: var(--ink);
+  font-weight: 700;
+}
+
+.article-backlinks {
+  padding: 20px 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.article-backlinks .section-label {
+  flex-basis: 100%;
+  margin: 0;
+}
+
+.article-cta {
+  padding: 30px;
+  border-radius: var(--radius);
+  background: var(--green-dark);
+  color: #ffffff;
+}
+
+.article-cta .section-label,
+.article-cta p {
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.article-cta h2 {
+  max-width: 15ch;
+  color: #ffffff;
 }
 
 .tiers-grid {
@@ -716,6 +886,9 @@ a {
 .about-media,
 .about-copy,
 .about-stats div,
+.blog-card,
+.article-toc,
+.article-cta,
 .masonry-card,
 .contact-card,
 .teaser-panel,
@@ -746,7 +919,8 @@ a {
   .process-grid,
   .catalog-grid,
   .about-section,
-  .about-stats {
+  .about-stats,
+  .blog-card {
     grid-template-columns: 1fr;
   }
 
