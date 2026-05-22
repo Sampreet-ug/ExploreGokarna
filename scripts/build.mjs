@@ -13,6 +13,7 @@ const filesToCopy = [
   "gallery.html",
   "blogs.html",
   "history-of-gokarna.html",
+  "beaches-of-gokarna.html",
   "contact.html",
   "styles.css",
   "script.js",
