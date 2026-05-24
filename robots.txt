@@ -1,4 +1,17 @@
 User-agent: *
+
+# Allow important content
 Allow: /
 
-Sitemap: https://www.discovergokarna.com/sitemap.xml
+# Block unnecessary system paths if applicable
+Disallow: /admin/
+Disallow: /api/
+Disallow: /login/
+Disallow: /dashboard/
+
+# Allow assets
+Allow: /images/
+Allow: /assets/
+
+# Sitemap
+Sitemap: https://discovergokarna.com/sitemap.xml
