@@ -1,6 +1,69 @@
 {
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
+  "redirects": [
+    {
+      "source": "/index.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/experiences.html",
+      "destination": "/experiences",
+      "permanent": true
+    },
+    {
+      "source": "/gallery.html",
+      "destination": "/gallery",
+      "permanent": true
+    },
+    {
+      "source": "/blogs.html",
+      "destination": "/blogs",
+      "permanent": true
+    },
+    {
+      "source": "/history-of-gokarna.html",
+      "destination": "/history-of-gokarna",
+      "permanent": true
+    },
+    {
+      "source": "/beaches-of-gokarna.html",
+      "destination": "/beaches-of-gokarna",
+      "permanent": true
+    },
+    {
+      "source": "/contact.html",
+      "destination": "/contact",
+      "permanent": true
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/experiences",
+      "destination": "/experiences.html"
+    },
+    {
+      "source": "/gallery",
+      "destination": "/gallery.html"
+    },
+    {
+      "source": "/blogs",
+      "destination": "/blogs.html"
+    },
+    {
+      "source": "/history-of-gokarna",
+      "destination": "/history-of-gokarna.html"
+    },
+    {
+      "source": "/beaches-of-gokarna",
+      "destination": "/beaches-of-gokarna.html"
+    },
+    {
+      "source": "/contact",
+      "destination": "/contact.html"
+    }
+  ],
   "headers": [
     {
       "source": "/env-config.js",
