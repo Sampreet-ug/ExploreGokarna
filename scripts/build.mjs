@@ -20,6 +20,7 @@ const filesToCopy = [
   "logo.png",
   "favicon.ico",
   "sitemap.xml",
+  "robots.txt",
 ];
 
 await rm("dist", { recursive: true, force: true });
