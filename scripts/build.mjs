@@ -20,6 +20,7 @@ const filesToCopy = [
   "logo.png",
   "favicon.ico",
   "sitemap.xml",
+  "sitemap_index.xml",
   "robots.txt",
 ];
 
