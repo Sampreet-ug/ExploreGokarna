@@ -19,6 +19,7 @@ const filesToCopy = [
   "script.js",
   "logo.png",
   "favicon.ico",
+  "sitemap.xml",
 ];
 
 await rm("dist", { recursive: true, force: true });
