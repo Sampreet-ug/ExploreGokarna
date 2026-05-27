@@ -14,6 +14,7 @@ const filesToCopy = [
   "blogs.html",
   "history-of-gokarna.html",
   "beaches-of-gokarna.html",
+  "best-time-to-visit-gokarna.html",
   "contact.html",
   "styles.css",
   "script.js",

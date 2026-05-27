@@ -33,6 +33,11 @@
       "permanent": true
     },
     {
+      "source": "/best-time-to-visit-gokarna.html",
+      "destination": "/best-time-to-visit-gokarna",
+      "permanent": true
+    },
+    {
       "source": "/contact.html",
       "destination": "/contact",
       "permanent": true
@@ -58,6 +63,10 @@
     {
       "source": "/beaches-of-gokarna",
       "destination": "/beaches-of-gokarna.html"
+    },
+    {
+      "source": "/best-time-to-visit-gokarna",
+      "destination": "/best-time-to-visit-gokarna.html"
     },
     {
       "source": "/contact",
