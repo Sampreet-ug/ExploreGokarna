@@ -8,30 +8,12 @@ const contactPhone = String(appConfig.contactPhone || "").replace(/\D/g, "");
 const whatsappMessages = {
   "trip-intake": `Hi Discover Gokarna, I want help planning a Gokarna trip.
 
-Dates:
-Group size:
-Tier interest (Drift/Immerse/Belong/not sure):
 What we want the trip to feel like:
 Dietary needs or must-haves:`,
   "general-enquiry": "Hi Discover Gokarna, I want to know more about your curated Gokarna trips.",
-  "drift-tier": `Hi Discover Gokarna, I am interested in the Drift tier.
-
-My dates are:
-Group size:
-Trip mood:
-Dietary needs:`,
-  "immerse-tier": `Hi Discover Gokarna, I am interested in the Immerse tier.
-
-My dates are:
-Group size:
-Trip mood:
-Dietary needs:`,
-  "belong-tier": `Hi Discover Gokarna, I am interested in the Belong tier.
-
-My dates are:
-Group size:
-Trip mood:
-Dietary needs:`,
+  "drift-tier": `Hi Discover Gokarna, I am interested in the Drift tier. Could you please share more details?`,
+  "immerse-tier": `Hi Discover Gokarna, I am interested in the Immerse tier. Could you please share more details?`,
+  "belong-tier": `Hi Discover Gokarna, I am interested in the Belong tier. Could you please share more details?`,
 };
 const whatsappLinks = document.querySelectorAll("[data-whatsapp-message-key]");
 
