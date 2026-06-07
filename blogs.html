@@ -25,15 +25,72 @@
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "Blog",
-      "name": "Discover Gokarna Blog",
-      "url": "https://www.discovergokarna.com/blogs",
-      "description": "Travel guides about Gokarna history, temples, beaches, local culture, and trip planning.",
-      "publisher": {
-        "@type": "Organization",
-        "name": "Discover Gokarna",
-        "url": "https://www.discovergokarna.com/"
-      }
+      "@graph": [
+        {
+          "@type": "Blog",
+          "@id": "https://www.discovergokarna.com/blogs#blog",
+          "name": "Discover Gokarna Blog",
+          "url": "https://www.discovergokarna.com/blogs",
+          "description": "Travel guides about Gokarna history, temples, beaches, local culture, weather, and trip planning.",
+          "publisher": {
+            "@id": "https://www.discovergokarna.com/#organization"
+          },
+          "blogPost": [
+            {
+              "@id": "https://www.discovergokarna.com/history-of-gokarna#article"
+            },
+            {
+              "@id": "https://www.discovergokarna.com/beaches-of-gokarna#article"
+            },
+            {
+              "@id": "https://www.discovergokarna.com/best-time-to-visit-gokarna#article"
+            }
+          ],
+          "inLanguage": "en-IN"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://www.discovergokarna.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Blogs",
+              "item": "https://www.discovergokarna.com/blogs"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Discover Gokarna Travel Guides",
+          "numberOfItems": 3,
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "url": "https://www.discovergokarna.com/history-of-gokarna",
+              "name": "History of Gokarna"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "url": "https://www.discovergokarna.com/beaches-of-gokarna",
+              "name": "Beaches of Gokarna"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "url": "https://www.discovergokarna.com/best-time-to-visit-gokarna",
+              "name": "Best Time to Visit Gokarna"
+            }
+          ]
+        }
+      ]
     }
   </script>
 </head>

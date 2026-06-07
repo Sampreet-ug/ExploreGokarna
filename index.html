@@ -16,25 +16,81 @@
     rel="stylesheet"
   >
   <link rel="stylesheet" href="styles.css">
-  <link rel="icon" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="14" fill="%23094537"/><circle cx="40" cy="24" r="16" fill="%23f2b84b"/><path d="M7 42c12-3 18-14 31-8 8 4 12 4 19 1-5 13-18 21-32 18-8-2-14-6-18-11z" fill="%2322d3c5"/><path d="M9 48c15 8 31 5 46-8-4 12-17 19-31 17-7-1-12-4-15-9z" fill="%230a3c73"/></svg>'>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <!--<link rel="icon" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="14" fill="%23094537"/><circle cx="40" cy="24" r="16" fill="%23f2b84b"/><path d="M7 42c12-3 18-14 31-8 8 4 12 4 19 1-5 13-18 21-32 18-8-2-14-6-18-11z" fill="%2322d3c5"/><path d="M9 48c15 8 31 5 46-8-4 12-17 19-31 17-7-1-12-4-15-9z" fill="%230a3c73"/></svg>'>-->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "TravelAgency",
-    "name": "Discover Gokarna",
-    "url": "https://www.discovergokarna.com",
-    "logo": "https://www.discovergokarna.com/logo.png",
-    "description": "Discover Gokarna designs concierge-led coastal trips with curated stays, transport, local hosts, cultural experiences, and WhatsApp support.",
-    "areaServed": {
-      "@type": "Place",
-      "name": "Gokarna, Karnataka, India"
-    },
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "contactType": "Customer Support",
-      "availableLanguage": ["English", "Hindi", "Kannada"]
-    },
-    "sameAs": []
+    "@graph": [
+      {
+        "@type": ["Organization", "TravelAgency"],
+        "@id": "https://www.discovergokarna.com/#organization",
+        "name": "Discover Gokarna",
+        "url": "https://www.discovergokarna.com/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.discovergokarna.com/logo.png",
+          "width": 1774,
+          "height": 887
+        },
+        "email": "contact@discovergokarna.com",
+        "description": "Discover Gokarna designs concierge-led coastal trips with curated stays, transport, local hosts, cultural experiences, and WhatsApp support.",
+        "areaServed": {
+          "@type": "Place",
+          "name": "Gokarna, Karnataka, India"
+        },
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "Customer Support",
+          "email": "contact@discovergokarna.com",
+          "availableLanguage": ["English", "Hindi", "Kannada"]
+        },
+        "sameAs": [
+          "https://www.instagram.com/discovergokarna"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://www.discovergokarna.com/#website",
+        "url": "https://www.discovergokarna.com/",
+        "name": "Discover Gokarna",
+        "publisher": {
+          "@id": "https://www.discovergokarna.com/#organization"
+        },
+        "inLanguage": "en-IN"
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://www.discovergokarna.com/#webpage",
+        "url": "https://www.discovergokarna.com/",
+        "name": "Discover Gokarna | Curated Gokarna Trips, Beaches, Stays and Local Experiences",
+        "description": "Discover Gokarna designs concierge-led coastal trips with curated stays, transport, local hosts, cultural experiences, and WhatsApp support.",
+        "isPartOf": {
+          "@id": "https://www.discovergokarna.com/#website"
+        },
+        "about": {
+          "@id": "https://www.discovergokarna.com/#organization"
+        },
+        "inLanguage": "en-IN"
+      },
+      {
+        "@type": "Service",
+        "@id": "https://www.discovergokarna.com/#trip-planning-service",
+        "name": "Gokarna Trip Planning and Travel Concierge",
+        "serviceType": "Custom trip planning and destination concierge",
+        "provider": {
+          "@id": "https://www.discovergokarna.com/#organization"
+        },
+        "areaServed": {
+          "@type": "Place",
+          "name": "Gokarna, Karnataka, India"
+        },
+        "url": "https://www.discovergokarna.com/"
+      }
+    ]
   }
   </script>
 </head>
