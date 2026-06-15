@@ -1031,26 +1031,18 @@ a {
   font-weight: 700;
 }
 
-.intro-strip,
-.activity-card,
-.tier-card,
-.reason-card,
-.photo-card,
-.about-section,
-.about-media,
-.about-copy,
-.about-stats div,
-.blog-card,
-.article-toc,
-.article-cta,
-.masonry-card,
-.contact-card,
-.teaser-panel,
-.process-step,
-.catalog-item {
+[data-reveal] {
   opacity: 0;
   transform: translateY(22px);
   transition: opacity 650ms ease, transform 650ms ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  [data-reveal] {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
 }
 
 .is-visible {

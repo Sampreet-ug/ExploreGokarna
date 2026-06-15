@@ -38,6 +38,11 @@
       "permanent": true
     },
     {
+      "source": "/gokarna-in-monsoon.html",
+      "destination": "/gokarna-in-monsoon",
+      "permanent": true
+    },
+    {
       "source": "/contact.html",
       "destination": "/contact",
       "permanent": true
@@ -67,6 +72,10 @@
     {
       "source": "/best-time-to-visit-gokarna",
       "destination": "/best-time-to-visit-gokarna.html"
+    },
+    {
+      "source": "/gokarna-in-monsoon",
+      "destination": "/gokarna-in-monsoon.html"
     },
     {
       "source": "/contact",

@@ -1,17 +1,11 @@
 User-agent: *
 
-# Allow important content
 Allow: /
 
-# Block unnecessary system paths if applicable
 Disallow: /admin/
 Disallow: /api/
 Disallow: /login/
 Disallow: /dashboard/
 
-# Allow assets
-Allow: /images/
-Allow: /assets/
-
-# Sitemap
-Sitemap: https://discovergokarna.com/sitemap.xml
+# Discovery files
+Sitemap: https://www.discovergokarna.com/sitemap_index.xml

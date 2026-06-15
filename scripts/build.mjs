@@ -15,6 +15,7 @@ const filesToCopy = [
   "history-of-gokarna.html",
   "beaches-of-gokarna.html",
   "best-time-to-visit-gokarna.html",
+  "gokarna-in-monsoon.html",
   "contact.html",
   "styles.css",
   "script.js",
@@ -23,6 +24,7 @@ const filesToCopy = [
   "sitemap.xml",
   "sitemap_index.xml",
   "robots.txt",
+  "llms.txt",
 ];
 
 await rm("dist", { recursive: true, force: true });

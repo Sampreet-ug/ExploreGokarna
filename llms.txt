@@ -1,0 +1,25 @@
+# Discover Gokarna
+
+> Discover Gokarna is a travel guide and trip-planning website for Gokarna, Karnataka, India. It covers beaches, local history, seasonal travel advice, experiences, and ways to contact the Discover Gokarna team.
+
+Use the canonical `https://www.discovergokarna.com` URLs below. The travel guides are editorial resources intended to help visitors plan a Gokarna trip. Conditions at beaches, trails, attractions, and transport services can change, so travelers should verify time-sensitive details locally.
+
+## Main Pages
+
+- [Discover Gokarna](https://www.discovergokarna.com/): Overview of Gokarna and the site's trip-planning services.
+- [Experiences](https://www.discovergokarna.com/experiences): Curated experiences and ways to explore Gokarna.
+- [Travel Blogs](https://www.discovergokarna.com/blogs): Index of all published Discover Gokarna travel guides.
+- [Contact Discover Gokarna](https://www.discovergokarna.com/contact): Contact options for personalized trip planning.
+
+## Travel Guides
+
+- [Gokarna in Monsoon](https://www.discovergokarna.com/gokarna-in-monsoon): Rainy-season weather, places, activities, safety advice, packing tips, and frequently asked questions.
+- [Best Time to Visit Gokarna](https://www.discovergokarna.com/best-time-to-visit-gokarna): Seasonal and month-by-month guidance for planning a Gokarna trip.
+- [Beaches of Gokarna](https://www.discovergokarna.com/beaches-of-gokarna): Guide to Gokarna's beaches, their character, access, and highlights.
+- [History of Gokarna](https://www.discovergokarna.com/history-of-gokarna): Overview of Gokarna's history, mythology, temples, and cultural heritage.
+
+## Optional
+
+- [Gallery](https://www.discovergokarna.com/gallery): Photographs and visual highlights from Gokarna.
+- [XML Sitemap](https://www.discovergokarna.com/sitemap.xml): Complete list of indexable website pages.
+- [Instagram](https://www.instagram.com/discovergokarna): Official Discover Gokarna Instagram profile.
