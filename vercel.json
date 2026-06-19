@@ -43,6 +43,11 @@
       "permanent": true
     },
     {
+      "source": "/gokarna-trip-planning-guide.html",
+      "destination": "/gokarna-trip-planning-guide",
+      "permanent": true
+    },
+    {
       "source": "/contact.html",
       "destination": "/contact",
       "permanent": true
@@ -76,6 +81,10 @@
     {
       "source": "/gokarna-in-monsoon",
       "destination": "/gokarna-in-monsoon.html"
+    },
+    {
+      "source": "/gokarna-trip-planning-guide",
+      "destination": "/gokarna-trip-planning-guide.html"
     },
     {
       "source": "/contact",
