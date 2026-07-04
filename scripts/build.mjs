@@ -1,4 +1,4 @@
-import { copyFile, mkdir, rm, writeFile } from "node:fs/promises";
+import { copyFile, cp, mkdir, rm, writeFile } from "node:fs/promises";
 
 const contactPhone = String(process.env.CONTACT_PHONE || "").replace(/\D/g, "");
 const isVercelBuild = process.env.VERCEL === "1";
@@ -20,8 +20,6 @@ const filesToCopy = [
   "contact.html",
   "styles.css",
   "script.js",
-  "logo.png",
-  "favicon.ico",
   "sitemap.xml",
   "sitemap_index.xml",
   "robots.txt",
@@ -32,6 +30,9 @@ await rm("dist", { recursive: true, force: true });
 await mkdir("dist", { recursive: true });
 
 await Promise.all(filesToCopy.map((file) => copyFile(file, `dist/${file}`)));
+await cp("assets", "dist/assets", { recursive: true });
+await copyFile("assets/logo.png", "dist/logo.png");
+await copyFile("assets/favicon.ico", "dist/favicon.ico");
 
 await writeFile(
   "dist/env-config.js",
