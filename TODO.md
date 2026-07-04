@@ -1,26 +1,8 @@
-# Optimization TODO
+# TODO
 
-## Step 1: Create optimization audit checklist
-- [ ] Identify top performance bottlenecks (fonts, hero/background images, JS reveal cost)
-- [ ] Identify SEO/structure gaps (OG/Twitter consistency, canonical consistency, routing consistency)
-
-## Step 2: Implement Core Web Vitals improvements
-- [ ] Reduce font blocking (font-display + weight/family minimization; consider self-host)
-- [ ] Replace/optimize remote Unsplash backgrounds (serve local optimized webp or reduce size)
-- [ ] Add `loading="lazy"` + `decoding="async"` + ensure width/height across pages
-- [ ] Add reduced-motion handling for scroll reveal
-
-## Step 3: Implement JS runtime optimizations
-- [ ] Replace long reveal selector with `data-reveal` approach (or page-scoped selectors)
-- [ ] Limit transitionDelay work to fewer targets
-- [ ] Ensure scripts load efficiently (confirm defer/defer where applicable)
-
-## Step 4: Implement SEO/structure improvements
-- [ ] Add consistent OpenGraph + Twitter meta tags across pages
-- [ ] Verify canonical + routes start with `/` consistently
-- [ ] Ensure JSON-LD not duplicated unnecessarily; validate schema
-
-## Step 5: Validate
-- [ ] Lighthouse runs on home + article + experiences
-- [ ] Check console errors and layout shifts
+- [ ] Move all local images/icons from repo root into `assets/` folder.
+- [ ] Update all HTML pages to use new asset paths (logo, favicons, apple touch icon, manifest, etc.).
+- [ ] Update `styles.css` and `script.js` if they reference image/icon URLs.
+- [ ] Verify there are no remaining references to old root asset paths.
+- [ ] Run build/preview check if available.
 
